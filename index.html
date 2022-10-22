@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castle Adventure Game | Get Started</title>
+
+    <style>
+        .StartBtn {
+            background-color: rgb(86, 114, 197);
+            font-size: 36px;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Welcome to Castle Masters</h1>
+        <br>
+        <br>
+        <br>
+        <p style="font-size: larger;"><u>Welcome to Castle Masters</p>
+        <p style="font-size: larger; padding-top: 5px;" >Castle Masters is all about exploring.</p>
+        <p style="font-size: larger; padding-top: 5px;" >Solve challenges and Explore the castle.</p>
+        <p style="font-size: larger; padding-top: 5px;" >Get the gold to finish & Win the game</u></p>
+        
+        
+        <button class="StartBtn" onclick=StartProgramFunc()>Click here to get started</button>
+
+
+        <p style="padding-top: 9%;">Platform code refactored from: https://codepen.io/stealy/pen/vYBZoeo</p>
+    </center>
+    <script>
+        function StartProgramFunc() {
+            alert("Welcome to Castle Masters Adventure Platform Game")
+            Name = prompt("To get started enter your name: ")
+            alert("Hello, " + Name)
+
+            // Redirect User to Castle Webpage
+            window.location.href="CastleEntrance.html";
+        }
+        
+    </script>
+</body>
+
+</html>
