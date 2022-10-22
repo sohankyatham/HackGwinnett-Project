@@ -27,12 +27,15 @@
     </div>
 
     <script>
+        alert("Get the blue diamond to enter the castle");
+
         (function () {
             var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
             window.requestAnimationFrame = requestAnimationFrame;
         })();
 
         var canvas = document.getElementById("canvas"),
+
             ctx = canvas.getContext("2d"),
             width = 1000,
             height = 400,
@@ -275,12 +278,12 @@
                         player.y = powerup[j].py;
                     }
                     else if (powerup[j].effect === 'win') {
-                        var r = confirm("You win! Play again?");
+                        var r = confirm("Good job, you got the diamond - now you may enter the castle");
                         if (r == false) {
                             player.x = 200;
                             player.y = 200;
                         } else {
-                            window.location.href = window.location.href;
+                            window.location.href = "CastleCorridor.html";
                         }
                     }
                     if (powerup[j].stay !== true)
